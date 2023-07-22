@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import { DataService } from '../data/data.service';
+import { OmdbapiService } from '../omdbapi/omdbapi.service';
 
 @Injectable()
 export class MoviesService {
-  constructor(private readonly dataService: DataService) {}
+  constructor(private readonly omdbapiService: OmdbapiService) {}
   private movies: string[] = ['Movie 1', 'Movie 2', 'Movie 3'];
 
   getMovies(): any {
-    return this.dataService.getMovies('matrix');
+    return this.omdbapiService.getMovies('matrix');
   }
 }

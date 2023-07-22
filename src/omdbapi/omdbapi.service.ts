@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 
 @Injectable()
-export class DataService {
+export class OmdbapiService {
   constructor(private readonly httpService: HttpService) {}
 
   async getMovies(movie: string): Promise<any> {
