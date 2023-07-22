@@ -6,7 +6,7 @@ export class MoviesController {
   constructor(private readonly moviesService: MoviesService) {}
 
   @Get('/:movie')
-  getMovies(@Param('id') movie: string): string[] {
+  getMovies(@Param('movie') movie: string): string[] {
     return this.moviesService.getMovies(movie);
   }
 }

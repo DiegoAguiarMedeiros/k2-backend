@@ -4,4 +4,4 @@ import { OmdbapiController } from './omdbapi.controller';
 @Module({
   controllers: [OmdbapiController],
 })
-export class DataModule {}
+export class OmdbapiModule {}
