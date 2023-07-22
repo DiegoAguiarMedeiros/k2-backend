@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { DataController } from './omdbapi.controller';
+import { OmdbapiController } from './omdbapi.controller';
 
 @Module({
-  controllers: [DataController],
+  controllers: [OmdbapiController],
 })
 export class DataModule {}

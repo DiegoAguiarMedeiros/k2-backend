@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { DataController } from './omdbapi.controller';
+import { OmdbapiController } from './omdbapi.controller';
 
-describe('DataController', () => {
-  let controller: DataController;
+describe('OmdbapiController', () => {
+  let controller: OmdbapiController;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      controllers: [DataController],
+      controllers: [OmdbapiController],
     }).compile();
 
-    controller = module.get<DataController>(DataController);
+    controller = module.get<OmdbapiController>(OmdbapiController);
   });
 
   it('should be defined', () => {
